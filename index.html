@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP 查询 - ip.eallion.com</title>
+  <meta name="description" content="查询您的 IP 地址、地理位置和分流信息">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico"></link>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>双栈 IP 分流查询</h1>
+      <div class="theme-switcher">
+        <button type="button" class="theme-btn active" data-theme="system" title="跟随系统">💻</button>
+        <button type="button" class="theme-btn" data-theme="light" title="浅色模式">☀️</button>
+        <button type="button" class="theme-btn" data-theme="dark" title="深色模式">🌙</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>正在获取 IP 信息...</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span>
+        <a href="https://www.eallion.com" target="_blank" rel="noopener noreferrer">eallion.com</a> · 
+        <a href="https://e5n.cc/@eallion" target="_blank" rel="noopener noreferrer">Mastodon</a> · 
+        <a href="https://github.com/eallion" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
